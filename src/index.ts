@@ -7,6 +7,7 @@ const main = async () => {
   app.use(express.json());
   app.use(cors());
   dotenv.config();
+  app.use("/graphql", graphqlHtt);
 };
 
 main().catch((error) => {
